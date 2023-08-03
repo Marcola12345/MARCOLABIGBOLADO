@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho tiago js</title>
+    <link rel="icon" href="js.png">
+    <script src="script.js"></script>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <H1 id="teste">
+        Seja bem vindo!!
+    </H1>
+
+    <button type="button"
+    onclick='document.getElementById("teste").innerHTML= "Pronto!"'> 
+    Click aqui para mudar o texto</button>
+    <br><br><br><br>
+   
+    <h2 id="texto">Esse texto sumira, basta apertar o botão abaixo!</h2>
+    <button type ="button"
+    onclick="document.getElementById('texto').style.display='none'">
+    Click aqui para ocultar </button>
+<br><br><br><br>
+
+    <h2>clique no botão para ver o texto secreto</h2>
+
+    <h3 id="texto2" style="display:none;">
+    TEXTO SECRETO!!
+    </h3>
+
+    <button type="button"
+    onclick="document.getElementById('texto2').style.display='block'">
+    Click aqui para mostrar o texto secreto </button>
+
+    <br><br><br><br>
+
+    <button onclick="document.getElementById('imagem1').src='img.ifunny.co/images/a8b4ae1fd483c40866fb0b2ea815e612455eec15a8369501c025beb090ed5acc_1.webp'">
+    Imagem 1 </button> 
+
+    <img id="imagem1" src="https://img.ifunny.co/images/a8b4ae1fd483c40866fb0b2ea815e612455eec15a8369501c025beb090ed5acc_1.webp" style="width: 300px"> 
+
+    <br><br><br><br>
+    
+    <button onclick="document.getElementById('imagem1').src='img.ifunny.co/images/5401e94fda4ca5ef40651edd45f5c8d50189c5b293168e9133bf401067a6d377_1.webp'">
+    Imagem 2</button>
+    <img id="imagem2" src="https://img.ifunny.co/images/5401e94fda4ca5ef40651edd45f5c8d50189c5b293168e9133bf401067a6d377_1.webp" style="width: 300px">
+   
+<br><br>
+
+    <h2 id="valor"></h2>
+
+    <script>
+        var Valor = 42;
+        var elementoH2 = document.getElementById('valor');
+        elementoH2.textContent = Valor;
+    </script>
+
+    <script>
+        function soma(p1, p2){
+            return p1 - p2;}
+
+    var resultado = soma(10, 5);
+    console.log(resultado);
+    </script>
+
+</body>
+</html>
